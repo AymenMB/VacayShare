@@ -22,12 +22,14 @@ VacayShare is a modern social media platform designed for travelers to share the
 ## Technology Stack
 
 ### Frontend
+
 - **Next.js 15**: With experimental React compiler and Progressive Rendering (PPR)
 - **React 19**: Using latest React features including Server Components
 - **TailwindCSS**: For responsive and utility-first styling
 - **TypeScript**: For type safety and better developer experience
 
 ### Backend
+
 - **Next.js API Routes**: Serverless functions for API endpoints
 - **Prisma**: ORM for database management
 - **MySQL**: Relational database for data persistence
@@ -56,18 +58,23 @@ VacayShare is a modern social media platform designed for travelers to share the
 ## Core Features Explained
 
 ### Feed System
+
 The feed displays posts from the current user and users they follow, ordered by creation date. It supports text and image posts with interactive elements like likes and comments.
 
 ### Story Feature
+
 Users can create stories that expire after 24 hours, providing a way to share quick updates that don't remain permanent.
 
 ### Social Interactions
+
 - **Following System**: Users can follow others to see their content in their feed
 - **Privacy Controls**: Block users to prevent them from seeing your content
 - **Friend Requests**: Send and receive follow requests with notifications
 
 ### Profile Customization
+
 Users can customize their profiles with:
+
 - Profile pictures
 - Cover images
 - Personal information (name, location, work, school)
@@ -77,7 +84,8 @@ Users can customize their profiles with:
 ## Getting Started
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 18+
 - MySQL database
 - Clerk account for authentication
 - Cloudinary account for image uploads
@@ -85,18 +93,21 @@ Users can customize their profiles with:
 ### Installation
 
 1. Clone the repository
+
 ```bash
 git clone https://github.com/AymenMB/VacayShare.git
 cd VacayShare
 ```
 
 2. Install dependencies
+
 ```bash
 npm install
 ```
 
 3. Set up environment variables
-Create a `.env` file in the root directory with the following variables:
+   Create a `.env` file in the root directory with the following variables:
+
 ```
 # Database
 DATABASE_URL="mysql://username:password@localhost:3306/vacayshare"
@@ -111,11 +122,13 @@ NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
 ```
 
 4. Set up the database
+
 ```bash
 npx prisma db push
 ```
 
 5. Run the development server
+
 ```bash
 npm run dev
 ```
